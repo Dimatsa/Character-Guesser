@@ -22,7 +22,9 @@ characters = {
          'Does your character live in the future?':
             {0: 13, 1: 1},
          'Is your character fond of donuts?':
-            {0: 1, 1: 13}
+            {0: 1, 1: 13},
+         'Does your character have a bad haircut?':
+            {0: 1, 1: 4}
          },
     'Philip J. Fry':
         {'Is your character real?':
@@ -38,7 +40,9 @@ characters = {
          'Does your character live in the future?':
             {0: 3, 1: 12},
          'Is your character fond of donuts?':
-            {0: 7, 1: 1}
+            {0: 7, 1: 1},
+         'Does your character have a bad haircut?':
+            {0: 5, 1: 2}
          },
     'Spongebob':
         {'Is your character real?':
@@ -54,8 +58,28 @@ characters = {
          'Does your character live in the future?':
             {0: 5, 1: 2},
          'Is your character fond of donuts?':
-            {0: 12, 1: 2}
+            {0: 12, 1: 2},
+         'Does your character have a bad haircut?':
+            {0: 5, 1: 2}
          },
+      'Donald Trump':
+        {'Is your character real?':
+            {0: 0, 1: 10},
+         'Is your character male?':
+            {0: 0, 1: 10},
+         'Is your character yellow?':
+            {0: 5, 1: 3},
+         'Is your character a human?':
+            {0: 0, 1: 10},
+         'Does your character have red hair?':
+            {0: 5, 1: 1},
+         'Does your character live in the future?':
+            {0: 9, 1: 0},
+         'Is your character fond of donuts?':
+            {0: 5, 1: 6},
+         'Does your character have a bad haircut?':
+            {0: 1, 1: 10}
+         }
 }
 
 # calculates the weighted average for the given answer
@@ -102,12 +126,12 @@ def calculate_character_probability(character, user_answers):
     return numerator / denominator
 
 
-print(calculate_character_probability('Homer Simpson', 
-        {'Is your character real?': 0,
+print(calculate_character_probability('Donald Trump', 
+        {'Is your character real?': 1,
          'Is your character male?': 1,
-         'Is your character yellow?': 0,
+         'Is your character yellow?': 1,
          'Is your character a human?': 1,
-         'Does your character have red hair?': 1,
-         'Does your character live in the future?': 1,
-         'Is your character fond of donuts?': 0
+         'Does your character have red hair?': 0,
+         'Does your character live in the future?': 0,
+         'Is your character fond of donuts?': 1
          }))
