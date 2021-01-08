@@ -6,7 +6,8 @@ app = Flask(__name__)
 def guess():
     answers = request.args.get('1. Does your character have yellow skin')
     answers2 = request.args.get('2. Does your character live in the future')
-    return jsonify(answers,answers2)
+    answers3 = request.args.get('3. Is your character an ape')
+    return jsonify(answers,answers2,answers3)
 
 
 @app.route('/questions/', methods=['GET'])
