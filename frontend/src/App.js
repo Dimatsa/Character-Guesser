@@ -10,16 +10,16 @@ class App extends React.Component {
         <form action="http://localhost:5000/guess/" method="GET" id="answer">
           <p>Check the answer to each true/false question, and click on the "Send Form" button to submit the information.</p>
           <p>1. Does your character have yellow skin:<br />
-            <input type="radio" name="1. Does your character have yellow skin" defaultValue={1} />Yes<br />
-            <input type="radio" name="1. Does your character have yellow skin" defaultValue={0} />No<br />
+            <input type="radio" name="1. Does your character have yellow skin" defaultValue={true} />Yes<br />
+            <input type="radio" name="1. Does your character have yellow skin" defaultValue={false} />No<br />
           </p>
           <p>2. Does your character live in the future:<br />
-            <input type="radio" name="2. Does your character live in the future" defaultValue={1} />Yes<br />
-            <input type="radio" name="2. Does your character live in the future" defaultValue={0} />No<br />
+            <input type="radio" name="2. Does your character live in the future" defaultValue={true} />Yes<br />
+            <input type="radio" name="2. Does your character live in the future" defaultValue={false} />No<br />
           </p>
           <p>3. Is your character an ape:<br />
-            <input type="radio" name="3. Is your character an ape" defaultValue={1} />Yes<br />
-            <input type="radio" name="3. Is your character an ape" defaultValue={0} />No<br />
+            <input type="radio" name="3. Is your character an ape" defaultValue={true} />Yes<br />
+            <input type="radio" name="3. Is your character an ape" defaultValue={false} />No<br />
           </p>
           <br />
           <br />
